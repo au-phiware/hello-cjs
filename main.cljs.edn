@@ -1,0 +1,10 @@
+{:compiler-options
+ {:main          example.core
+  :target        :nodejs
+  :verbose       true
+  :optimizations :none
+  :foreign-libs [{:file "src"
+                  :module-type :es6}]
+  :closure-warnings
+  {:non-standard-jsdoc :off
+   :global-this        :off}}}
