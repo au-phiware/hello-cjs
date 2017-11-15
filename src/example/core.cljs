@@ -1,5 +1,10 @@
 (ns example.core
-  (:require [react :refer [createElement]]
-            ["react-dom/server" :as ReactDOMServer :refer [renderToString]]))
+  (:require [cljs.nodejs :as nodejs]
+            [js.hello :as hello]))
 
-(js/console.log (renderToString (createElement "div" nil "Hello World!")))
+(nodejs/enable-util-print!)
+
+(defn -main [& args]
+  (hello/sayHello))
+
+(set! *main-cli-fn* -main)

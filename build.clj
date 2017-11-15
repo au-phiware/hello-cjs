@@ -10,5 +10,7 @@
    :install-deps true
    :npm-deps {:react "15.6.2"
               :react-dom "15.6.2"}
+   :foreign-libs [{:file "src"
+                   :module-type :es6}]
    :closure-warnings {:non-standard-jsdoc :off
                       :global-this :off}})
