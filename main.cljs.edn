@@ -1,0 +1,2 @@
+{:compiler-options
+ {:main example.core}}
